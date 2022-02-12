@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* Ruby: 2.6.3
+* Rails: 6.0.4.4
 
-Things you may want to cover:
+* GEM used:
+gem "bcrypt" 
+gem "pry" => Debugging code
+gem "devise" => user creation and authentication
+gem "jwt" => Token generation for authentication
+gem "kaminari" => Pagination
+gem "rspec-rails" => For writing test cases
+gem "factory_bot_rails" => creating record for test case
+gem "faker" => Generating Fake data
 
-* Ruby version
+* Database 
+Script to run: 
+rake db:create db:migrate
 
-* System dependencies
+if you want load some users
+rake db:seed
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Running Test Cases
+rspec spec
