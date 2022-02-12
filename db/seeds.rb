@@ -1,0 +1,4 @@
+User.create(first_name: 'Rachel', last_name: 'Green', email: "iliketoshop@gmail.com", password: "Rachel123", password_confirmation: "abc123", username: 'green123')
+User.create(first_name: 'Ross', last_name: 'Gellar', email: "ross123@hotmail.com", password: "Ross@123", password_confirmation: "abc123", username: 'geller123')
+User.create(first_name: 'Charlie', last_name: 'Brown', email: "charlie@gmail.com", password: "Charlie123", password_confirmation: "abc123", username: 'brown123')
+User.create(first_name: 'Joey', last_name: 'Tribbiani', email: "bluedresses4va@gmail.com", password: "Joey##@@", password_confirmation: "abc123", username: 'van123')
