@@ -37,6 +37,6 @@ class MessagesController < ApplicationController
   end
 
   def participant(recipient_id)
-    @participant = Participant.message_exchange(current_user.id, recipient_id)&.first
+    Participant.message_exchange(current_user.id, recipient_id)&.first
   end
 end

@@ -31,3 +31,7 @@
 
 > Running Test Cases
  - rspec spec
+
+> Download postman Collection from 
+
+https://drive.google.com/file/d/1iQyvhVF5tiSzB83vNMPey0tvp7JBaDUB/view?usp=sharing

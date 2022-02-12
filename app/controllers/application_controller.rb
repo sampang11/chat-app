@@ -1,13 +1,9 @@
 class ApplicationController < ActionController::API
-# Prevent CSRF attacks by raising an exception.
-# For APIs, you may want to use :null_session instead.
-#   protect_from_forgery with: :null_session
   include ActionController::HttpAuthentication::Basic::ControllerMethods
   include ActionController::HttpAuthentication::Token::ControllerMethods
 
   respond_to :json
 
-  # before_action :underscore_params!
   before_action :configure_permitted_parameters, if: :devise_controller?
   before_action :authenticate_user
 
@@ -43,7 +39,4 @@ class ApplicationController < ActionController::API
     @current_user_id.present?
   end
 
-  def underscore_params!
-    params.deep_transform_keys!(&:underscore)
-  end
 end
